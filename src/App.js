@@ -14,8 +14,8 @@ function App() {
         <Layout>
           {/* <Main></Main> */}
           <Switch>
-            <Route path="/" >
-              <Main></Main>
+            <Route path="/" component={Main} >
+              {/* <Main></Main> */}
             </Route>
             <Redirect to="/" />
           </Switch>
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default withRouter(App);
+export default App;
