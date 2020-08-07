@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch, withRouter, Redirect } from 're
 
 import './App.css';
 import Main from './containers/Main/Main';
+import Experience from './containers/Experience/Experience';
+import About from './containers/About/About';
 import Layout from './hoc/Layout/Layout';
 
 function App() {
@@ -12,11 +14,10 @@ function App() {
     <Router>
       <div className="App">
         <Layout>
-          {/* <Main></Main> */}
           <Switch>
-            <Route path="/" component={Main} >
-              {/* <Main></Main> */}
-            </Route>
+            <Route path="/about" component={About} />
+            <Route path="/experience" component={Experience} />
+            <Route path="/" component={Main} />
             <Redirect to="/" />
           </Switch>
         </Layout>

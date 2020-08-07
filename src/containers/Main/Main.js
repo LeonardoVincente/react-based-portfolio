@@ -1,7 +1,9 @@
 import React from 'react';
 
+import classes from './Main.module.css';
+
 const main = (props) =>{
-    return <div>
+    return <div className={classes.main}>
         Hello cruel world
     </div>
 }
