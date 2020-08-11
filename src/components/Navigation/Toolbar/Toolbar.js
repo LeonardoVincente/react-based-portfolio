@@ -7,8 +7,8 @@ const toolbar = (props) => {
     return (
         <header className={classes.Toolbar}>
             Leonardo Vincente
-            {/* <DrawerToggle clicked={props.drawerToggleClicked}/>
-            <div className={classes.Logo}>
+            {/* <DrawerToggle clicked={props.drawerToggleClicked}/> */}
+            {/* <div className={classes.Logo}>
                 <Logo height="80%" />
             </div> */}
 
