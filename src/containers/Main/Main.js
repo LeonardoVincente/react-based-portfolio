@@ -11,6 +11,9 @@ const main = (props) => {
                 <h1>I'm Leonardo Vincente</h1>
                 <p>And I'm a Software Engineer</p>
             </div>
+            <div className={classes.introText}>
+                <p>Worked for the past 6+ years building web browser and Android mobile phones</p>
+            </div>
         </div>
 
     </div>
