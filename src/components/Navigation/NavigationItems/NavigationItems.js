@@ -6,14 +6,14 @@ import NavigationItem from './NavigationItem/NavigationItem';
 const navigationItems = (props) => (
     <ul className={classes.NavigationItems}>
         <NavigationItem
-            link="/"
+            link="#home"
         >Home</NavigationItem>
-        <NavigationItem
+        {/* <NavigationItem
             link="/about"
-        >About Me</NavigationItem>
+        >About Me</NavigationItem> */}
         <NavigationItem
-            link="/experience"
-        >Contact</NavigationItem>
+            link="#experience"
+        >Experience</NavigationItem>
     </ul>
 );
 

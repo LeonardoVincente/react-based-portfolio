@@ -12,14 +12,19 @@ function App() {
   return (
 
     <Router>
-      <div className="App">
+      <div id="home" className="App">
         <Layout>
-          <Switch>
+          <Main></Main>
+          <Experience></Experience>
+          
+          {/* MAYBE ADD A SKILL SECTION */}
+
+          {/* <Switch>
             <Route path="/about" component={About} />
             <Route path="/experience" component={Experience} />
             <Route path="/" component={Main} />
             <Redirect to="/" />
-          </Switch>
+          </Switch> */}
         </Layout>
       </div>
     </Router>

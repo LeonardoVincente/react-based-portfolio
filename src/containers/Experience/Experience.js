@@ -2,10 +2,12 @@ import React from 'react';
 
 import classes from './Experience.module.css';
 
-const experience = (props)=>{
+const Experience = (props)=>{
     return (
-        <p className={classes.main}>Hello Experience World</p>
+        <div id="experience" className={classes.mainContainer}>
+            Hello
+        </div>
     );
 }
 
-export default experience;
+export default Experience;
