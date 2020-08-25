@@ -16,7 +16,7 @@ function App() {
         <Layout>
           <Main></Main>
           <Experience></Experience>
-          
+
           {/* MAYBE ADD A SKILL SECTION */}
 
           {/* <Switch>

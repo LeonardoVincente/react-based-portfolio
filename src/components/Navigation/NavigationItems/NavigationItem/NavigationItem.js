@@ -3,8 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 import classes from './NavigationItem.module.css';
 
-const navigationItem = (props) => (
-    <li className={classes.NavigationItem}>
+const navigationItem = (props) => {
+    let elementClasses = props.isSelected ? classes.active : '';
+
+    // if(props.)
+
+    return <li id={props.elementId} className={classes.NavigationItem}>
         <a href={props.link}>{props.children}</a>
         {/* <NavLink 
             exact
@@ -12,6 +16,6 @@ const navigationItem = (props) => (
             activeClassName={classes.active}
         >{props.children}</NavLink> */}
     </li>
-);
+};
 
 export default navigationItem;

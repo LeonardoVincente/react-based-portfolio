@@ -19,6 +19,10 @@
     color: white;
     font-size: 1em;
 }
+/* 
+.isSelected{
+    color: purple !important;
+} */
 
 @media(min-width: 500px) {
     .NavigationItem {
