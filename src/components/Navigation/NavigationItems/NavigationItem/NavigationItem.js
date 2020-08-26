@@ -6,10 +6,8 @@ import classes from './NavigationItem.module.css';
 const navigationItem = (props) => {
     let elementClasses = props.isSelected ? classes.active : '';
 
-    // if(props.)
-
-    return <li id={props.elementId} className={classes.NavigationItem}>
-        <a href={props.link}>{props.children}</a>
+    return <li className={classes.NavigationItem}>
+        <a className={elementClasses} href={props.link}>{props.children}</a>
         {/* <NavLink 
             exact
             to={props.link}

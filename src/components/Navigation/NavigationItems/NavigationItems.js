@@ -4,8 +4,6 @@ import classes from './NavigationItems.module.css'
 import NavigationItem from './NavigationItem/NavigationItem';
 
 const NavigationItems = (props) => {
-    var [currentSectionSelected, setCurrentSectionSelected] = useState(0);
-
     let links = [
         {
             link: '#home',
@@ -17,14 +15,15 @@ const NavigationItems = (props) => {
         }
     ];
 
+    var [currentSectionSelected, setCurrentSectionSelected] = useState(links[0]);
+
     const initializeScroll = (currentSectionSelected, setCurrentSectionSelected, links) => {
         var returnedFunction = debounce(() => {
             let scroll_position = window.scrollY;
             window.requestAnimationFrame(() => {
                 updateToolbar(scroll_position, setCurrentSectionSelected, currentSectionSelected, links);
             });
-        }, 250);
-
+        }, 400);
         window.addEventListener('scroll', returnedFunction);
     }
 
@@ -34,8 +33,9 @@ const NavigationItems = (props) => {
 
     const navigationItems = links.map((linkObj) => {
         return <NavigationItem
+            key={linkObj.link}
             link={linkObj.link}
-            isSelected={true}
+            isSelected={currentSectionSelected.link === linkObj.link}
         >{linkObj.text}</NavigationItem>
     })
 
@@ -46,27 +46,33 @@ const NavigationItems = (props) => {
     );
 };
 
-const updateToolbar = (position, setCurrentSectionSelected, cur, listElements) => {
-    console.log("DOING SOMETHING " + position);
 
+const getLinkObjById = (id, links) => {
+    if (!links) {
+        return;
+    }
+
+    for (let i = 0; i < links.length; i++) {
+        if (links[i].link === id) {
+            return links[i];
+        }
+    }
+    return;
+}
+
+const updateToolbar = (position, setCurrentSectionSelected, cur, listElements) => {
     for (let i = 0; i < listElements.length; i++) {
         const element = document.querySelector(listElements[i].link);
         var rect = element.getBoundingClientRect();
-        element.style = "color: green";
-        console.log("Element ", element);
         if (position >= rect.top && position <= rect.bottom) {
-            element.style = "color: red";
-            
+            let selectedObj = getLinkObjById(listElements[i].link, listElements);
+            setCurrentSectionSelected(selectedObj);
         }
     }
-
-    setCurrentSectionSelected(cur + 1);
-
 }
 
 const debounce = (func, wait) => {
     let timeout;
-
     return function executedFunction(...args) {
         const later = () => {
             clearTimeout(timeout);
