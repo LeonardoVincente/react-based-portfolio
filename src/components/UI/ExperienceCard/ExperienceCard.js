@@ -8,20 +8,17 @@ const ExperienceCard = (props) => {
 
     return (
         <Card>
-            {/* <div className={classes.experienceCardContainer}>
-                
-            </div> */}
-
             <div className={classes.jobCard}>
                 <div className={classes.jobSummary}>
                     <div className={companyLogoClasses.join(' ')}></div>
                     <div class={classes.companyInfo}>
-                        <div><b>Thermofisher Scientific - Software Engineer</b></div>
-                        <div>January 2019 - Present</div>
+                        <div><b>{props.experienceData.company} - {props.experienceData.jobTitle}</b></div>
+                        <div>{props.experienceData.startDate} - {props.experienceData.endDate}</div>
                     </div>
                 </div>
-                <div className={classes.jobDescription}>Working with Angular/Typescript for the Front End and Restful
-                            backend microservices with Java. </div>
+                <div className={classes.jobDescription}>
+                    {props.experienceData.jobDescription}
+                </div>
             </div>
         </Card>
     );
