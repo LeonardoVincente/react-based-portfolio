@@ -11,7 +11,8 @@ const Experience = (props) => {
             startDate: 'January 2019',
             endDate: 'Present',
             jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java.',
-            companyLogo: ''
+            companyLogo: '',
+            logoBGColor: ''
         }
     ];
 
