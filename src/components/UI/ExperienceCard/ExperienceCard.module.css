@@ -20,10 +20,16 @@
     border-radius: 65px;
     background-size: 100%;
     border: solid gray 1px;
-    background-image: url('../../../assets/images/thermofisher-logo.png');
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .thermoFisherLogo{
+    background-image: url('../../../assets/images/argus-logo.jpg');
   }
 
+  
   .companyInfo {
     display: flex;
     font-size: 16px;
