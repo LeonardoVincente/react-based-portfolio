@@ -26,6 +26,10 @@
   }
   
   .thermoFisherLogo{
+    background-image: url('../../../assets/images/thermofisher-logo.png');
+  }
+
+  .argusTelematics{
     background-image: url('../../../assets/images/argus-logo.jpg');
   }
 
