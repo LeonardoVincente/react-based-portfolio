@@ -5,8 +5,12 @@ import classes from './ExperienceCard.module.css';
 
 const getCompanyLogo = (company) => {
     switch (company) {
+        case 'Facebook Inc.':
+            return classes.facebookLogo;
         case 'Thermofisher Scientific':
             return classes.thermoFisherLogo;
+        case 'Sumsung Electronics':
+            return classes.samsungLogo;
         case 'Argus Telematics':
             return classes.argusTelematics;
     }

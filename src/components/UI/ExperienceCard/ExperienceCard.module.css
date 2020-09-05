@@ -23,10 +23,27 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 100%;
   }
   
+  .facebookLogo{
+    background-image: url('../../../assets/images/facebook-f-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    background-color: #3b5998;
+  }
+
   .thermoFisherLogo{
+    background-color: #ed2c34;
     background-image: url('../../../assets/images/thermofisher-logo.png');
+  }
+  
+  .samsungLogo{
+    background-image: url('../../../assets/images/samsung-logo-white.png');
+    background-color: #0c4da2;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .argusTelematics{
