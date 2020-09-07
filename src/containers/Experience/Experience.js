@@ -43,11 +43,16 @@ const Experience = (props) => {
         <div className={classes.experienceCardContainer}>
             <ExperienceCard experienceData={experienceData}></ExperienceCard>
         </div>
-    ))
+    ));
 
     return (
         <div id="experience" className={classes.mainContainer}>
-            {experienceCards}
+            <div className={classes.sectionTtle}>
+                <span>Job Experience</span>
+            </div>
+            <div className={classes.experienceCards}>
+                {experienceCards}
+            </div>
         </div>
     );
 }
