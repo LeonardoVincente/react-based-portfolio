@@ -22,7 +22,7 @@ const ExperienceCard = (props) => {
     const companyLogo = getCompanyLogo(props.experienceData.company);
     companyLogoClasses.push(companyLogo);
 
-    const moreInfoClasses = [classes.moreInfo, classes.moreInfoHidden];
+    const moreInfoClasses = [classes.moreInfo, classes.moreInfoShowing];
 
     const cardHover = () => {
         console.log('Inside hover');
