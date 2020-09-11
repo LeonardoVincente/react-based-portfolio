@@ -33,7 +33,8 @@ const ExperienceCard = (props) => {
 
     const cardExitHover = () => {
         console.log("Exiting hover");
-        moreInfoClasses.pop();
+        moreIn
+        foClasses.pop();
         // moreInfoClasses.push(classes.moreInfo);
         moreInfoClasses.push(classes.moreInfoHidden);
     };
