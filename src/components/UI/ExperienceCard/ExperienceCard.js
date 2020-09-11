@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Card from '../Card/Card';
 import classes from './ExperienceCard.module.css';
@@ -18,6 +18,7 @@ const getCompanyLogo = (company) => {
 
 
 const ExperienceCard = (props) => {
+    const [cardHovered, setCardHovered] = useState(false);
     const companyLogoClasses = [classes.companyLogo];
     const companyLogo = getCompanyLogo(props.experienceData.company);
     companyLogoClasses.push(companyLogo);
@@ -29,32 +30,36 @@ const ExperienceCard = (props) => {
         moreInfoClasses.pop();
         // moreInfoClasses.push(classes.moreInfo);
         moreInfoClasses.push(classes.moreInfoShowing);
+        // setCardHovered(true);
     };
 
     const cardExitHover = () => {
         console.log("Exiting hover");
-        moreIn
-        foClasses.pop();
+        // moreIn
+        moreInfoClasses.pop();
         // moreInfoClasses.push(classes.moreInfo);
         moreInfoClasses.push(classes.moreInfoHidden);
+        // setCardHovered(false);
     };
 
     return (
         <Card>
             <div
-                className={classes.jobCard}
+                className={classes.cardContainer}
                 onMouseEnter={() => cardHover()}
                 onMouseLeave={() => cardExitHover()}
             >
-                <div className={classes.jobSummary}>
-                    <div className={companyLogoClasses.join(' ')}></div>
-                    <div class={classes.companyInfo}>
-                        <div><b>{props.experienceData.company} - {props.experienceData.jobTitle}</b></div>
-                        <div>{props.experienceData.startDate} - {props.experienceData.endDate}</div>
+                <div className={classes.jobCard}>
+                    <div className={classes.jobSummary}>
+                        <div className={companyLogoClasses.join(' ')}></div>
+                        <div class={classes.companyInfo}>
+                            <div><b>{props.experienceData.company} - {props.experienceData.jobTitle}</b></div>
+                            <div>{props.experienceData.startDate} - {props.experienceData.endDate}</div>
+                        </div>
                     </div>
-                </div>
-                <div className={classes.jobDescription}>
-                    {props.experienceData.jobDescription}
+                    <div className={classes.jobDescription}>
+                        {props.experienceData.jobDescription}
+                    </div>
                 </div>
                 <div className={moreInfoClasses.join(' ')}>Hello</div>
             </div>

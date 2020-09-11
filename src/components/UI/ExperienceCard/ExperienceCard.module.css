@@ -1,8 +1,13 @@
+.cardContainer{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .jobCard {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
 
 /* .jobCard:hover {
@@ -10,77 +15,75 @@
 } */
 
 .jobSummary {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
-  .companyLogo {
-    width: 50px;
-    height: 50px;
-    /* min-width: 65px; */
-    border-radius: 65px;
-    background-size: 100%;
-    border: solid gray 1px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-  }
-  
-  .facebookLogo{
-    background-image: url('../../../assets/images/facebook-f-2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 35%;
-    background-color: #3b5998;
-  }
+.companyLogo {
+  width: 50px;
+  height: 50px;
+  /* min-width: 65px; */
+  border-radius: 65px;
+  background-size: 100%;
+  border: solid gray 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
 
-  .thermoFisherLogo{
-    background-color: #ed2c34;
-    background-image: url('../../../assets/images/thermofisher-logo.png');
-  }
-  
-  .samsungLogo{
-    background-image: url('../../../assets/images/samsung-logo-white.png');
-    background-color: #0c4da2;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.facebookLogo {
+  background-image: url('../../../assets/images/facebook-f-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+  background-color: #3b5998;
+}
 
-  .argusTelematics{
-    background-image: url('../../../assets/images/argus-logo.jpg');
-  }
-  
-  .companyInfo {
-    display: flex;
-    font-size: 16px;
-    flex-direction: column;
-    height: 55px;
-    margin-left: 10px;
-    justify-content: center;
-    flex: 1;
-  }
+.thermoFisherLogo {
+  background-color: #ed2c34;
+  background-image: url('../../../assets/images/thermofisher-logo.png');
+}
 
-  .jobDescription {
-    text-align: justify;
-    padding: 10px;
-    font-size: 16px;
-  }
+.samsungLogo {
+  background-image: url('../../../assets/images/samsung-logo-white.png');
+  background-color: #0c4da2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .moreInfo {
-    width: 100%;
-    height: 100%;
-    background-color: gray;
-    position: relative;
-  }
-  
-.moreInfoHidden{
+.argusTelematics {
+  background-image: url('../../../assets/images/argus-logo.jpg');
+}
+
+.companyInfo {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  height: 55px;
+  margin-left: 10px;
+  justify-content: center;
+  flex: 1;
+}
+
+.jobDescription {
+  text-align: justify;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.moreInfo {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: relative;
+}
+
+.moreInfoHidden {
   top: -300px;
 }
 
-.moreInfoShowing{
-  top: 100px;
+.moreInfoShowing {
+  top: 300px;
 }
-
-
