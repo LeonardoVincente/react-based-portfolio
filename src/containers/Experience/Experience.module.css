@@ -1,6 +1,9 @@
 .mainContainer{
     width: 100%;
+    height: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sectionTtle{
@@ -16,16 +19,34 @@
     align-self: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 100%;
+    flex: 1;
 }
 
 .experienceCardContainer{
     width: 90%;
+    min-height: 170px;
     margin-top: 20px;
 }
 
 @media(min-width: 500px){
     .experienceCardContainer{
         width: 45%;
-        height: 180px;
+        max-width: 500px;
     }    
+}
+
+@media(min-height: 500px){
+    .experienceCardContainer{
+        height: 45%;
+        max-height: 200px;
+    }    
+    
+    .mainContainer{
+        height: calc(100vh - 56px);
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }

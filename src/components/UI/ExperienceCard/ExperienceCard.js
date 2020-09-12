@@ -23,24 +23,19 @@ const ExperienceCard = (props) => {
     const companyLogo = getCompanyLogo(props.experienceData.company);
     companyLogoClasses.push(companyLogo);
 
-    const moreInfoClasses = [classes.moreInfo, classes.moreInfoShowing];
-
     const cardHover = () => {
-        console.log('Inside hover');
-        moreInfoClasses.pop();
-        // moreInfoClasses.push(classes.moreInfo);
-        moreInfoClasses.push(classes.moreInfoShowing);
-        // setCardHovered(true);
+        setCardHovered(true);
     };
 
     const cardExitHover = () => {
-        console.log("Exiting hover");
-        // moreIn
-        moreInfoClasses.pop();
-        // moreInfoClasses.push(classes.moreInfo);
-        moreInfoClasses.push(classes.moreInfoHidden);
-        // setCardHovered(false);
+        setCardHovered(false);
     };
+
+    let moreInfoElement = <div className={classes.moreInfo}>More Info</div>;
+
+    if (!cardHovered) {
+        moreInfoElement = null;
+    }
 
     return (
         <Card>
@@ -60,8 +55,12 @@ const ExperienceCard = (props) => {
                     <div className={classes.jobDescription}>
                         {props.experienceData.jobDescription}
                     </div>
+                    <div className={classes.moreInfo}>
+                        <span>
+                            More Info
+                        </span>
+                    </div>
                 </div>
-                <div className={moreInfoClasses.join(' ')}>Hello</div>
             </div>
         </Card>
     );
