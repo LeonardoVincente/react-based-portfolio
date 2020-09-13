@@ -94,6 +94,11 @@
   box-shadow: 1px 1px 1px lightgray;
   background-color: #80d6ff;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.moreInfoButton:hover {
+  background-color: #4ba3c7;
 }
 
 .moreInfoButton span {

@@ -38,7 +38,7 @@ const ExperienceCard = (props) => {
                         {props.experienceData.jobDescription}
                     </div>
                     <div className={classes.moreInfo}>
-                        <div className={classes.moreInfoButton}>
+                        <div className={classes.moreInfoButton} onClick={()=>props.onMoreButtonClick(props.experienceData)}>
                             <Logo />
                             <span>
                                 More Info
