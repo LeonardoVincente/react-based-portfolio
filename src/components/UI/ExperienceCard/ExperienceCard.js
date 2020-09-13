@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Card from '../Card/Card';
 import classes from './ExperienceCard.module.css';
+import { ReactComponent as Logo } from '../../../assets/images/loupe-black-18dp.svg';
 
 const getCompanyLogo = (company) => {
     switch (company) {
@@ -18,32 +19,13 @@ const getCompanyLogo = (company) => {
 
 
 const ExperienceCard = (props) => {
-    const [cardHovered, setCardHovered] = useState(false);
     const companyLogoClasses = [classes.companyLogo];
     const companyLogo = getCompanyLogo(props.experienceData.company);
     companyLogoClasses.push(companyLogo);
 
-    const cardHover = () => {
-        setCardHovered(true);
-    };
-
-    const cardExitHover = () => {
-        setCardHovered(false);
-    };
-
-    let moreInfoElement = <div className={classes.moreInfo}>More Info</div>;
-
-    if (!cardHovered) {
-        moreInfoElement = null;
-    }
-
     return (
         <Card>
-            <div
-                className={classes.cardContainer}
-                onMouseEnter={() => cardHover()}
-                onMouseLeave={() => cardExitHover()}
-            >
+            <div className={classes.cardContainer}>
                 <div className={classes.jobCard}>
                     <div className={classes.jobSummary}>
                         <div className={companyLogoClasses.join(' ')}></div>
@@ -56,9 +38,12 @@ const ExperienceCard = (props) => {
                         {props.experienceData.jobDescription}
                     </div>
                     <div className={classes.moreInfo}>
-                        <span>
-                            More Info
-                        </span>
+                        <div className={classes.moreInfoButton}>
+                            <Logo />
+                            <span>
+                                More Info
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

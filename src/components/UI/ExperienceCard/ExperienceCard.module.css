@@ -1,4 +1,4 @@
-.cardContainer{
+.cardContainer {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -72,7 +72,6 @@
 }
 
 .moreInfo {
-  background-color: gray;
   position: relative;
   bottom: 0;
   height: 25px;
@@ -84,4 +83,41 @@
 
 .moreInfoShowing {
   top: -300px;
+}
+
+.moreInfoButton {
+  width: 125px;
+  height: 35px;
+  line-height: 2;
+  margin: auto;
+  border: solid 1px lightgray;
+  box-shadow: 1px 1px 1px lightgray;
+  background-color: #80d6ff;
+  border-radius: 5px;
+}
+
+.moreInfoButton span {
+  margin-left: 10px;
+}
+
+.cardContainer:hover .moreInfoButton {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
