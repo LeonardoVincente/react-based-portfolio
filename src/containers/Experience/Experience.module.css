@@ -26,17 +26,6 @@
     width: 90%;
     min-height: 170px;
     margin-top: 20px;
-    /* transition-property: width height;
-    transition-duration: 2s;
-    transition-delay: 2s;
-    transition-timing-function: linear; */
-    transition: width 2s, height 4s;
-}
-
-.fullScreenCard {
-    width: 100%;
-    transition: width 1s, height 2s;
-    background-color: gray;
 }
 
 @media(min-width: 700px) {

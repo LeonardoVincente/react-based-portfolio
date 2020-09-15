@@ -48,10 +48,6 @@ const Experience = (props) => {
 
     const experienceCards = experienceJobs.map(experienceData => {
         let experienceDataClass = classes.experienceCardContainer;
-        if (experienceData.company === selectedCompany.company) {
-            console.log('THe data us eher')
-            experienceDataClass = classes.fullScreenCard;
-        }
         return (
             <div className={experienceDataClass}>
                 <ExperienceCard
