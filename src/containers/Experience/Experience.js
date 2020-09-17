@@ -59,6 +59,7 @@ const Experience = (props) => {
 
     return (
         <div id="experience" className={classes.mainContainer}>
+            <div className={classes.detailView}>Detail View</div>
             <div className={classes.sectionTtle}>
                 <span>Job Experience</span>
             </div>
