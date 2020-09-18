@@ -39,12 +39,18 @@ const experienceJobs = [
 ];
 
 const Experience = (props) => {
-    const [selectedCompany, setSelectedCompany] = useState({});
+    const [selectedCompany, setSelectedCompany] = useState(null);
 
+    const detailViewClasses = [classes.detailView];
+    if(selectedCompany != null){
+         console.log('adding class')
+        detailViewClasses.push(classes.detailViewShowing);
+    }
     const clickOnButton = (experienceData) => {
         console.log('Click the button', experienceData);
         setSelectedCompany(experienceData);
     }
+
 
     const experienceCards = experienceJobs.map(experienceData => {
         let experienceDataClass = classes.experienceCardContainer;
@@ -59,7 +65,7 @@ const Experience = (props) => {
 
     return (
         <div id="experience" className={classes.mainContainer}>
-            <div className={classes.detailView}>Detail View</div>
+            <div className={detailViewClasses.join(' ')}>Detail View</div>
             <div className={classes.sectionTtle}>
                 <span>Job Experience</span>
             </div>
