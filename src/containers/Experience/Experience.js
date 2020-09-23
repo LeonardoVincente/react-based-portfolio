@@ -49,6 +49,8 @@ const Experience = (props) => {
     const clickOnButton = (experienceData) => {
         console.log('Click the button', experienceData);
         setSelectedCompany(experienceData);
+        var elmnt = document.getElementById("experience");
+        elmnt.scrollIntoView();
     }
 
 
