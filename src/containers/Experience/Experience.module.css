@@ -28,18 +28,6 @@
     margin-top: 20px;
 }
 
-.detailView{
-    width: 100%;
-    height: calc(100vh - 56px );
-    background-color: antiquewhite;
-    z-index: 2000;
-    opacity: 50%;
-    position: absolute;
-    left: -100vw;
-    transition-property: right, left;
-    transition-duration: 2s;
-}
-
 .detailViewShowing{
     left: 0;
 }

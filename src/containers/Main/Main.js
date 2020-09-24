@@ -4,6 +4,9 @@ import classes from './Main.module.css';
 
 const main = (props) => {
     return <div className={classes.main}>
+        <div className={classes.experienceDetail}>
+                Hello
+        </div>
         <div className={classes.introduction}>
 
             <div className={classes.mainImageBG}>

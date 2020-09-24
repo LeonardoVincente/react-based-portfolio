@@ -41,16 +41,11 @@ const experienceJobs = [
 const Experience = (props) => {
     const [selectedCompany, setSelectedCompany] = useState(null);
 
-    const detailViewClasses = [classes.detailView];
-    if(selectedCompany != null){
-         console.log('adding class')
-        detailViewClasses.push(classes.detailViewShowing);
-    }
     const clickOnButton = (experienceData) => {
         console.log('Click the button', experienceData);
         setSelectedCompany(experienceData);
         var elmnt = document.getElementById("experience");
-        elmnt.scrollIntoView();
+        elmnt.scrollIntoView({block: "end", inline: "nearest"});
     }
 
 
@@ -67,7 +62,6 @@ const Experience = (props) => {
 
     return (
         <div id="experience" className={classes.mainContainer}>
-            <div className={detailViewClasses.join(' ')}>Detail View</div>
             <div className={classes.sectionTtle}>
                 <span>Job Experience</span>
             </div>
