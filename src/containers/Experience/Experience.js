@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import {
+    atom,
+    useRecoilState,
+} from 'recoil';
 
 import classes from './Experience.module.css';
 import ExperienceCard from '../../components/UI/ExperienceCard/ExperienceCard';
@@ -39,13 +43,15 @@ const experienceJobs = [
 ];
 
 const Experience = (props) => {
-    const [selectedCompany, setSelectedCompany] = useState(null);
+    const experienceState = atom({
+        key: 'experienceState',
+        default: '',
+    });
+
+    const [currentExperience, setCurrentExperience] = useRecoilState(experienceState);
 
     const clickOnButton = (experienceData) => {
-        console.log('Click the button', experienceData);
-        setSelectedCompany(experienceData);
-        var elmnt = document.getElementById("experience");
-        elmnt.scrollIntoView({block: "end", inline: "nearest"});
+        setCurrentExperience(experienceData);
     }
 
 

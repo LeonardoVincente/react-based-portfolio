@@ -1,12 +1,25 @@
 import React from 'react';
+import {
+    atom,
+    useRecoilState,
+} from 'recoil';
 
 import classes from './Main.module.css';
 
-const main = (props) => {
+const Main = (props) => {
+    // const experienceState = atom({
+    //     key: 'experienceState',
+    //     default: '',
+    // });
+
+    // const [currentExperience, setCurrentExperience] = useRecoilState(experienceState);
+
+    // console.log(currentExperience);
+
     return <div className={classes.main}>
-        <div className={classes.experienceDetail}>
-                Hello
-        </div>
+        {/* <div className={classes.experienceDetail}>
+                Hello */}
+        {/* </div> */}
         <div className={classes.introduction}>
 
             <div className={classes.mainImageBG}>
@@ -25,4 +38,4 @@ const main = (props) => {
     </div>
 }
 
-export default main; 
+export default Main; 
