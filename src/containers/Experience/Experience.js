@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     atom,
-    useRecoilState,
+    useSetRecoilState,
 } from 'recoil';
 
 import classes from './Experience.module.css';
@@ -42,18 +42,16 @@ const experienceJobs = [
     }
 ];
 
+const experienceState = atom({
+    key: 'experienceState',
+    default: null,
+});
+
 const Experience = (props) => {
-    const experienceState = atom({
-        key: 'experienceState',
-        default: '',
-    });
-
-    const [currentExperience, setCurrentExperience] = useRecoilState(experienceState);
-
+    const setCurrentExperience = useSetRecoilState(experienceState);
     const clickOnButton = (experienceData) => {
         setCurrentExperience(experienceData);
     }
-
 
     const experienceCards = experienceJobs.map(experienceData => {
         let experienceDataClass = classes.experienceCardContainer;

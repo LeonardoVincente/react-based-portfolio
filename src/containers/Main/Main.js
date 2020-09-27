@@ -1,27 +1,29 @@
 import React from 'react';
 import {
     atom,
-    useRecoilState,
+    useRecoilValue,
 } from 'recoil';
+import DetailExperience from '../../components/UI/DetailExperience/DetailExperience';
 
 import classes from './Main.module.css';
 
+const experienceState = atom({
+    key: 'experienceState',
+    default: '',
+});
+
 const Main = (props) => {
-    // const experienceState = atom({
-    //     key: 'experienceState',
-    //     default: '',
-    // });
-
-    // const [currentExperience, setCurrentExperience] = useRecoilState(experienceState);
-
-    // console.log(currentExperience);
+    const currentExperience = useRecoilValue(experienceState);
+    let experienceDetail = null;
+    if (currentExperience != null) {
+        experienceDetail = (
+            <DetailExperience  experienceInfo={currentExperience} />
+        );
+    }
 
     return <div className={classes.main}>
-        {/* <div className={classes.experienceDetail}>
-                Hello */}
-        {/* </div> */}
+        {experienceDetail}
         <div className={classes.introduction}>
-
             <div className={classes.mainImageBG}>
                 <div className={classes.bgText}>
                     <div className={classes.textPresentation}>
@@ -34,7 +36,6 @@ const Main = (props) => {
                 <p>Worked for the past 6+ years building web and Android applications</p>
             </div>
         </div>
-
     </div>
 }
 
