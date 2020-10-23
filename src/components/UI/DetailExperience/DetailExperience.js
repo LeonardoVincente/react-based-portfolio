@@ -7,12 +7,17 @@ const DetailExperience = (props) => {
         <React.Fragment>
             <div className={classes.experienceDetail}>
                 <div className={classes.detailCard}>
-                    <div className={classes.title}>
-                        {props.experienceInfo.company}
+                    <div className={classes.header}>
+                        <div className={classes.companyName}>
+                            {props.experienceInfo.company}
+                        </div>
+                        <div className={classes.title}>
+                            {props.experienceInfo.jobTitle}
+                        </div>
                     </div>
-                    <div className={classes.detailSection}>
+                    {/* <div className={classes.detailSection}>
                         {props.experienceInfo.jobTitle}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </React.Fragment>
