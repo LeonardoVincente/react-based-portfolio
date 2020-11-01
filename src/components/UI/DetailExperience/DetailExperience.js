@@ -15,9 +15,9 @@ const DetailExperience = (props) => {
                             {props.experienceInfo.jobTitle}
                         </div>
                     </div>
-                    {/* <div className={classes.detailSection}>
+                    <div className={classes.detailSection}>
                         {props.experienceInfo.jobTitle}
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </React.Fragment>
