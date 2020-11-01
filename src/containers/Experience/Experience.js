@@ -14,7 +14,10 @@ const experienceJobs = [
         startDate: 'August 2020',
         endDate: 'Present',
         jobDescription: 'Currently in bootcamp.',
-        logoBGColor: 'gray'
+        logoBGColor: 'gray',
+        detailed:{
+            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+        }
     },
     {
         company: 'Thermofisher Scientific',
@@ -22,7 +25,10 @@ const experienceJobs = [
         startDate: 'January 2019',
         endDate: 'July 2020',
         jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java.',
-        logoBGColor: 'red'
+        logoBGColor: 'red',
+        detailed:{
+            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+        }
     },
     {
         company: 'Sumsung Electronics',
@@ -30,7 +36,10 @@ const experienceJobs = [
         startDate: 'February 2015',
         endDate: 'December 2017',
         jobDescription: 'Worked as a Web Developer using AngularJS or Vanilla Javascript. Developed for Android applications using Java.',
-        logoBGColor: 'gray'
+        logoBGColor: 'gray',
+        detailed:{
+            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+        }
     },
     {
         company: 'Argus Telematics',
@@ -38,7 +47,10 @@ const experienceJobs = [
         startDate: 'May 2014',
         endDate: 'February 2015',
         jobDescription: 'Worked as a Front End Developer using Polymer library for web components. Also worked on some backend services using C#.',
-        logoBGColor: 'gray'
+        logoBGColor: 'gray',
+        detailed:{
+            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+        }
     }
 ];
 
