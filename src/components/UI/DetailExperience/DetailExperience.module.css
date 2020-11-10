@@ -25,3 +25,9 @@
 .title{
     font-size: 24px;
 }
+.imagesContainer{
+    width: 800px;
+    height: 400px;
+    /* background-color: lightblue; */
+
+}

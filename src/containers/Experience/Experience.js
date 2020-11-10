@@ -68,7 +68,7 @@ const Experience = (props) => {
     const experienceCards = experienceJobs.map(experienceData => {
         let experienceDataClass = classes.experienceCardContainer;
         return (
-            <div className={experienceDataClass}>
+            <div key={experienceData.company} className={experienceDataClass}>
                 <ExperienceCard
                     experienceData={experienceData}
                     onMoreButtonClick={clickOnButton}
