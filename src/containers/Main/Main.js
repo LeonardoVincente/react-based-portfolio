@@ -16,9 +16,7 @@ const Main = (props) => {
     const currentExperience = useRecoilValue(experienceState);
     let experienceDetail = null;
     if (currentExperience != null) {
-        experienceDetail = (
-            <DetailExperience  experienceInfo={currentExperience} />
-        );
+        experienceDetail = <DetailExperience experienceInfo={currentExperience} />
     }
 
     return <div className={classes.main}>
