@@ -2,6 +2,7 @@ import React from 'react';
 
 import classes from './DetailExperience.module.css';
 
+
 const DetailExperience = ({ experienceInfo }) => {
     return (
         <React.Fragment>
