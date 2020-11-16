@@ -2,20 +2,28 @@ import React, { useState, useEffect } from 'react';
 
 import classes from './NavigationItems.module.css'
 import NavigationItem from './NavigationItem/NavigationItem';
+import { experienceAtom } from '../../../containers/Experience/Experience';
+import {
+    useRecoilState,
+} from 'recoil';
+
+const links = [
+    {
+        link: '#home',
+        text: 'Home'
+    },
+    {
+        link: '#experience',
+        text: 'Experience'
+    }
+];
+
 
 const NavigationItems = (props) => {
-    let links = [
-        {
-            link: '#home',
-            text: 'Home'
-        },
-        {
-            link: '#experience',
-            text: 'Experience'
-        }
-    ];
 
     var [currentSectionSelected, setCurrentSectionSelected] = useState(links[0]);
+    const [currentExperience, setCurrentExperience] = useRecoilState(experienceAtom);
+    closeDetailViewIfNotExperianceTab(currentSectionSelected, setCurrentExperience);
 
     const initializeScroll = (currentSectionSelected, setCurrentSectionSelected, links) => {
         var returnedFunction = debounce(() => {
@@ -23,7 +31,7 @@ const NavigationItems = (props) => {
             window.requestAnimationFrame(() => {
                 updateToolbar(scroll_position, setCurrentSectionSelected, currentSectionSelected, links);
             });
-        }, 400);
+        }, 200);
         window.addEventListener('scroll', returnedFunction);
     }
 
@@ -58,6 +66,12 @@ const getLinkObjById = (id, links) => {
         }
     }
     return;
+}
+
+const closeDetailViewIfNotExperianceTab = (currentSectionSelected, setCurrentExperience)=>{
+    if(links[1] != currentSectionSelected){
+        setCurrentExperience(null);
+    }
 }
 
 const updateToolbar = (position, setCurrentSectionSelected, cur, listElements) => {

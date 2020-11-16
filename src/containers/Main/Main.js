@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    useRecoilValue,
+    useRecoilState,
 } from 'recoil';
 import DetailExperience from '../../components/UI/DetailExperience/DetailExperience';
 import { experienceAtom } from '../Experience/Experience';
@@ -8,12 +8,10 @@ import { experienceAtom } from '../Experience/Experience';
 import classes from './Main.module.css';
 
 const Main = (props) => {
-    const currentExperience = useRecoilValue(experienceAtom);
-    // const currentExperience = experienceDataSelector.get();
-    const [showDetailModal, setShowDetailModal] = React.useState(true);
+    const [currentExperience, setCurrentExperience] = useRecoilState(experienceAtom);
     let experienceDetail = null;
-    if (currentExperience != null && showDetailModal) {
-        experienceDetail = <DetailExperience experienceInfo={currentExperience} />
+    if (currentExperience != null) {
+        experienceDetail = <DetailExperience experienceInfo={currentExperience} onClose={()=>setCurrentExperience(null)}/>
     }
 
     return <div className={classes.main}>
