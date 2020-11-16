@@ -1,21 +1,18 @@
 import React from 'react';
 import {
-    atom,
     useRecoilValue,
 } from 'recoil';
 import DetailExperience from '../../components/UI/DetailExperience/DetailExperience';
+import { experienceAtom } from '../Experience/Experience';
 
 import classes from './Main.module.css';
 
-const experienceState = atom({
-    key: 'experienceState',
-    default: '',
-});
-
 const Main = (props) => {
-    const currentExperience = useRecoilValue(experienceState);
+    const currentExperience = useRecoilValue(experienceAtom);
+    // const currentExperience = experienceDataSelector.get();
+    const [showDetailModal, setShowDetailModal] = React.useState(true);
     let experienceDetail = null;
-    if (currentExperience != null) {
+    if (currentExperience != null && showDetailModal) {
         experienceDetail = <DetailExperience experienceInfo={currentExperience} />
     }
 

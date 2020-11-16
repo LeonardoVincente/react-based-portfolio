@@ -3,10 +3,12 @@ import React from 'react';
 import classes from './DetailExperience.module.css';
 
 
-const DetailExperience = ({ experienceInfo }) => {
+
+const DetailExperience = ({ experienceInfo, onClose }) => {
+    
     return (
         <React.Fragment>
-            <div className={classes.experienceDetail}>
+            <div className={classes.experienceDetail} onClick={onClose}>
                 <div className={classes.detailCard}>
                     <div className={classes.header}>
                         <div className={classes.companyName}>
@@ -27,10 +29,6 @@ const DetailExperience = ({ experienceInfo }) => {
 
                         </div>
                     </div>
-                    {/* <div className={classes.detailSection}>
-                        {props.experienceInfo.jobTitle}
-                    </div> */}
-\
                 </div>
             </div>
         </React.Fragment>

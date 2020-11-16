@@ -29,7 +29,7 @@ const ExperienceCard = (props) => {
                 <div className={classes.jobCard}>
                     <div className={classes.jobSummary}>
                         <div className={companyLogoClasses.join(' ')}></div>
-                        <div class={classes.companyInfo}>
+                        <div className={classes.companyInfo}>
                             <div><b>{props.experienceData.company} - {props.experienceData.jobTitle}</b></div>
                             <div>{props.experienceData.startDate} - {props.experienceData.endDate}</div>
                         </div>

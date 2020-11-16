@@ -54,13 +54,13 @@ const experienceJobs = [
     }
 ];
 
-const experienceState = atom({
+export const experienceAtom = atom({
     key: 'experienceState',
     default: null,
 });
 
 const Experience = (props) => {
-    const setCurrentExperience = useSetRecoilState(experienceState);
+    const setCurrentExperience = useSetRecoilState(experienceAtom);
     const clickOnButton = (experienceData) => {
         setCurrentExperience(experienceData);
     }
