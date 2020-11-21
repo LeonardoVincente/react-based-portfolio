@@ -16,6 +16,7 @@
     width: 80%;
     height: 80%;
     background-color: white;
+    display: flex;
 }
 
 .companyName{
@@ -28,6 +29,13 @@
 .imagesContainer{
     width: 800px;
     height: 400px;
-    /* background-color: lightblue; */
+}
 
+.contentContainer{
+    flex: 1;
+}
+
+.carruselContainer{
+    display: flex;
+    flex: 1;
 }

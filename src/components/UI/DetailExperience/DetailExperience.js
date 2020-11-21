@@ -3,12 +3,12 @@ import React from 'react';
 import classes from './DetailExperience.module.css';
 
 
-function manageCardClick(event){
+function manageCardClick(event) {
     event.stopPropagation();
 }
 
 const DetailExperience = ({ experienceInfo, onClose }) => {
-    
+
     return (
         <React.Fragment>
             <div className={classes.experienceDetail} onClick={onClose}>
@@ -28,7 +28,7 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                         <div className={classes.description}>
                             {experienceInfo.detailed.longDescription}
                         </div>
-                        <div className={classes.imagesContainer}>
+                        <div className={classes.carruselContainer}>
 
                         </div>
                     </div>
