@@ -11,10 +11,7 @@ const rightArrowClicked = (currentIndex, numberOfChildren, setCurrentIndex) => {
 
 
 const leftArrowClicked = (currentIndex, numberOfChildren, setCurrentIndex) => {
-    let newIndex = currentIndex - 1;
-    if (newIndex < 0) {
-        newIndex = numberOfChildren - 1;
-    }
+    const newIndex = currentIndex === 0 ? numberOfChildren - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
 }
 
