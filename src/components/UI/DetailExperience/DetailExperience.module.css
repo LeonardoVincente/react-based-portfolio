@@ -47,7 +47,6 @@
 .projects{
     display: flex;
     flex: 4;
-    background-color: lightgreen;
     justify-content: center;
     align-items: center;
 }
@@ -55,5 +54,4 @@
 .carruselContainer {
     height: 80%;
     width: 700px;
-    background-color: lightpink;
 }

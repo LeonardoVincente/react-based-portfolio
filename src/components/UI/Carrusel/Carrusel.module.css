@@ -1,28 +1,46 @@
-.container{
+.container {
+    position: relative;
     background-color: #ddd;
     height: 100%;
     width: 100%;
 }
 
-.arrowIcon{
-    position: relative;
+.arrowIcon {
+    position: absolute;
     display: inline-block;
     z-index: 100;
     background-color: transparent;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(100, 100, 100, 0.3);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: white;
     border-radius: 50%;
     box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.rightArrow{
-    top: 50%;
-    left: 48%;
+.arrowIcon:hover {
+    background-color: rgba(50, 50, 50, 0.3);
 }
 
+.arrowIcon>svg {
+    display: block;
+}
 
-.leftArrow{
-    top: 50%;
-    right: 48%;
+.leftArrow > svg{
+    position: relative;
+    left: 5px;
+}
+
+.rightArrow {
+    top: 45%;
+    left: 90%;
+}
+
+.leftArrow {
+    top: 45%;
+    right: 90%;
 }
