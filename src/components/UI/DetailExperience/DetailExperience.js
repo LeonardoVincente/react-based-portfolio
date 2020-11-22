@@ -1,6 +1,8 @@
 import React from 'react';
 
 import classes from './DetailExperience.module.css';
+import Carrusel from '../Carrusel/Carrusel';
+import CarruselItem from '../Carrusel/CarruselItem/CarruselItem';
 
 
 function manageCardClick(event) {
@@ -28,8 +30,14 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                         <div className={classes.description}>
                             {experienceInfo.detailed.longDescription}
                         </div>
-                        <div className={classes.carruselContainer}>
-
+                        <div className={classes.projects}>
+                            <div className={classes.carruselContainer}>
+                                <Carrusel >
+                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[0]}></CarruselItem>
+                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[1]}></CarruselItem>
+                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[2]}></CarruselItem>
+                                </Carrusel>
+                            </div>
                         </div>
                     </div>
                 </div>

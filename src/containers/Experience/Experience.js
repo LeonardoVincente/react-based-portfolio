@@ -15,7 +15,7 @@ const experienceJobs = [
         endDate: 'Present',
         jobDescription: 'Currently in bootcamp.',
         logoBGColor: 'gray',
-        detailed:{
+        detailed: {
             longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
         }
     },
@@ -26,7 +26,7 @@ const experienceJobs = [
         endDate: 'July 2020',
         jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java.',
         logoBGColor: 'red',
-        detailed:{
+        detailed: {
             longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
         }
     },
@@ -37,7 +37,7 @@ const experienceJobs = [
         endDate: 'December 2017',
         jobDescription: 'Worked as a Web Developer using AngularJS or Vanilla Javascript. Developed for Android applications using Java.',
         logoBGColor: 'gray',
-        detailed:{
+        detailed: {
             longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
         }
     },
@@ -48,7 +48,7 @@ const experienceJobs = [
         endDate: 'February 2015',
         jobDescription: 'Worked as a Front End Developer using Polymer library for web components. Also worked on some backend services using C#.',
         logoBGColor: 'gray',
-        detailed:{
+        detailed: {
             longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
         }
     }
