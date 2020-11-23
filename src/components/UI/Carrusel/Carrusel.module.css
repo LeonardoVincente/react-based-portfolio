@@ -30,7 +30,7 @@
     display: block;
 }
 
-.leftArrow > svg{
+.leftArrow>svg {
     position: relative;
     left: 5px;
 }
@@ -43,4 +43,15 @@
 .leftArrow {
     top: 45%;
     right: 90%;
+}
+
+.progressContainer {
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+}
+
+.progressLarge {
+    width: 40%;
 }

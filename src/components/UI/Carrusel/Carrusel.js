@@ -2,6 +2,7 @@ import React from 'react';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
+import CarruselIndexIndicator from './CarruselIndexIndicator/CarruselIndexIndicator';
 import classes from './Carrusel.module.css';
 
 const rightArrowClicked = (currentIndex, numberOfChildren, setCurrentIndex) => {
@@ -20,6 +21,10 @@ export default function Carrusel({ children }) {
     const carruselItemToDisplay = children[currentIndex];
     const leftArrowClasses = [classes.leftArrow, classes.arrowIcon].join(' ');
     const rightArrowClasses = [classes.rightArrow, classes.arrowIcon].join(' ');
+
+    const progressClasses = [classes.progressContainer, classes.progressLarge].join(' ');
+
+
     return (
         <div className={classes.container} >
             <div className={rightArrowClasses} onClick={() => rightArrowClicked(currentIndex, children.length, setCurrentIndex)}>
@@ -29,6 +34,9 @@ export default function Carrusel({ children }) {
                 onClick={() => leftArrowClicked(currentIndex, children.length, setCurrentIndex)}
             >
                 <ArrowBackIosIcon></ArrowBackIosIcon>
+            </div>
+            <div className={progressClasses}>
+                <CarruselIndexIndicator length={children.length} index={currentIndex}/>
             </div>
             {carruselItemToDisplay}
         </div>

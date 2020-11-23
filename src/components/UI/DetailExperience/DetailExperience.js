@@ -36,6 +36,7 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                                     <CarruselItem image={experienceInfo.detailed.projects[0].images[0]}></CarruselItem>
                                     <CarruselItem image={experienceInfo.detailed.projects[0].images[1]}></CarruselItem>
                                     <CarruselItem image={experienceInfo.detailed.projects[0].images[2]}></CarruselItem>
+                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[2]}></CarruselItem>
                                 </Carrusel>
                             </div>
                         </div>
