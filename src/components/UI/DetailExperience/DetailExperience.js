@@ -24,11 +24,14 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                         </div>
                     </div>
                     <div className={classes.contentContainer}>
-                        <div className={classes.techStack}>
-
-                        </div>
                         <div className={classes.description}>
                             {experienceInfo.detailed.longDescription}
+                        </div>
+                        <div className={classes.techStack}>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>React</li>
+                            </ul>
                         </div>
                         <div className={classes.projects}>
                             <div className={classes.carruselContainer}>
