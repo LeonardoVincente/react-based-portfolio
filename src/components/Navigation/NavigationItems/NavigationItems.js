@@ -15,6 +15,18 @@ const links = [
     {
         link: '#experience',
         text: 'Experience'
+    },
+    {
+        link: '#techStach',
+        text: 'Tech Stack'
+    },
+    {
+        link: '#projects',
+        text: 'Projects'
+    },
+    {
+        link: '#contact',
+        text: 'Contact Me'
     }
 ];
 
