@@ -26,6 +26,14 @@ const development = {
                 ],
                 images: ['some image whatsap 1', 'some image whatsap 2', 'some image whatsap 3']
             }
+        ],
+        techStack: [
+            'Javascript',
+            'React',
+            'Jest',
+            'React Testing Library',
+            'Electron',
+            'Sass'
         ]
     }
 };

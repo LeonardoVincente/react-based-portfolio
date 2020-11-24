@@ -10,6 +10,9 @@ function manageCardClick(event) {
 }
 
 const DetailExperience = ({ experienceInfo, onClose }) => {
+    const techStack = experienceInfo.detailed.techStack.map((tech) => {
+        return <li>{tech}</li>
+    });
 
     return (
         <React.Fragment>
@@ -26,12 +29,6 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                     <div className={classes.contentContainer}>
                         <div className={classes.description}>
                             {experienceInfo.detailed.longDescription}
-                        </div>
-                        <div className={classes.techStack}>
-                            <ul>
-                                <li>Javascript</li>
-                                <li>React</li>
-                            </ul>
                         </div>
                         <div className={classes.projects}>
                             <div className={classes.carruselContainer}>
