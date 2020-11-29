@@ -17,7 +17,7 @@ const links = [
         text: 'Experience'
     },
     {
-        link: '#techStach',
+        link: '#techStack',
         text: 'Tech Stack'
     },
     {
