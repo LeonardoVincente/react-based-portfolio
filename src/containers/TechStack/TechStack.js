@@ -5,7 +5,7 @@ import classes from './TechStack.module.css';
 const TechStack = (props) => {
     return (
         <div  id='techStack' className={classes.main}>
-            <div>Tech Stack</div>
+            <div className={classes.techCardsContainer}> Tech Stack</div>
         </div>
     )
 }

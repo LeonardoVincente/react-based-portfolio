@@ -1,7 +1,17 @@
-.main{
+.main {
     width: 100%;
     height: calc(100vh);
     font-size: 24px;
-    background-color: aliceblue;
+    background: linear-gradient(0deg, #fafafa 60%, #e02e6d 60%);
     padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.techCardsContainer {
+    width: 80%;
+    height: 90%;
+    background-color: bisque;
+    border: 1px solid lightgray;
 }
