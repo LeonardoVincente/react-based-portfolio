@@ -1,9 +1,9 @@
 .main {
     width: 100%;
-    height: calc(100vh);
+    height: calc(100vh - 56px);
     font-size: 24px;
     background: linear-gradient(0deg, #fafafa 60%, #e02e6d 60%);
-    padding-top: 150px;
+    padding-top: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +12,18 @@
 .techCardsContainer {
     width: 80%;
     height: 90%;
-    background-color: bisque;
+    background-color: rgb(253, 255, 254);
     border: 1px solid lightgray;
+}
+
+.header{
+    font-size: 12px;
+}
+
+.content{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns:  50% 50%;
+    grid-template-rows: 50% 50%;
 }
