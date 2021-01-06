@@ -48,9 +48,14 @@ const TechStack = (props) => {
     const contentItems = categories.map(item => {
         const individualTech = item.list.map(tech => {
             return (
-                <li>
-                    {tech}
-                </li>
+                <div className={classes.techContainer}>
+                    <div className={classes.logo}>
+
+                    </div>
+                    <div className={classes.techName}>
+                        {tech}
+                    </div>
+                </div>
             );
         })
         return (

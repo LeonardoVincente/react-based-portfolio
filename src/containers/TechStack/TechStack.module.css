@@ -17,7 +17,23 @@
 }
 
 .header{
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.content{
+    justify-items: center;
+}
+
+.techContainer{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.category{
+    width: 50%;
 }
 
 .content{
@@ -26,4 +42,13 @@
     height: 100%;
     grid-template-columns:  50% 50%;
     grid-template-rows: 50% 50%;
+    flex: 1;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    background-color: lightgreen;
+    flex: 1;
+    margin-right: 10px;
 }
