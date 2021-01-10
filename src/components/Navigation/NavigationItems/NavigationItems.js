@@ -21,10 +21,6 @@ const links = [
         text: 'Tech Stack'
     },
     {
-        link: '#projects',
-        text: 'Projects'
-    },
-    {
         link: '#contact',
         text: 'Contact Me'
     }
@@ -80,8 +76,8 @@ const getLinkObjById = (id, links) => {
     return;
 }
 
-const closeDetailViewIfNotExperianceTab = (currentSectionSelected, setCurrentExperience)=>{
-    if(links[1] != currentSectionSelected){
+const closeDetailViewIfNotExperianceTab = (currentSectionSelected, setCurrentExperience) => {
+    if (links[1] != currentSectionSelected) {
         setCurrentExperience(null);
     }
 }
