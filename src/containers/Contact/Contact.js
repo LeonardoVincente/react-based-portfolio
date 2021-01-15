@@ -11,17 +11,20 @@ const Contact = (props) => {
         <div id='contact' className={classes.contact}>
             <div className={classes.main}>
             </div>
+            <div>
+                
+            </div>
             <div className={classes.contactInfo} >
                 <div>
                     <a href="https://www.linkedin.com/in/ingleonardohernandez/" target="_blank">
-                        <LinkedInIcon /></a>
+                        <LinkedInIcon fontSize="large" /></a>
                 </div>
                 <div>
-                    <a href="mailto: ic.lehevi@gmail.com"><EmailIcon /></a>
+                    <a href="mailto: ic.lehevi@gmail.com"><EmailIcon fontSize="large" /></a>
                 </div>
                 <div>
                     <a href="https://github.com/LeonardoVincente" target="_blank">
-                        <GitHubIcon />
+                        <GitHubIcon fontSize="large"  />
                     </a>
                 </div>
             </div>
