@@ -12,12 +12,12 @@ const Contact = (props) => {
             <div className={classes.main}>
             </div>
             <div>
-                
+
             </div>
             <div className={classes.contactInfo} >
                 <div>
                     <a href="https://www.linkedin.com/in/ingleonardohernandez/" target="_blank">
-                        <LinkedInIcon fontSize="large" /></a>
+                        <LinkedInIcon color="inherit" fontSize="large" /></a>
                 </div>
                 <div>
                     <a href="mailto: ic.lehevi@gmail.com"><EmailIcon fontSize="large" /></a>

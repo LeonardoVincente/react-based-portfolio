@@ -22,8 +22,7 @@ const categories = [
             'JAX-RS',
             'Node',
             'Express',
-            'MySql',
-            'Jasmine',
+            'MongoDB',
         ]
     },
     {
@@ -40,6 +39,8 @@ const categories = [
             'AWS',
             'Jenkins',
             'Docker',
+            'Cloudformation',
+            'Datadog'
         ]
     }
 ];
