@@ -10,22 +10,25 @@ const Contact = (props) => {
     return (
         <div id='contact' className={classes.contact}>
             <div className={classes.main}>
-            </div>
-            <div>
 
             </div>
             <div className={classes.contactInfo} >
-                <div>
-                    <a href="https://www.linkedin.com/in/ingleonardohernandez/" target="_blank">
-                        <LinkedInIcon color="inherit" fontSize="large" /></a>
+                <div className={classes.contactTitle}>
+                    Contact Me
                 </div>
-                <div>
-                    <a href="mailto: ic.lehevi@gmail.com"><EmailIcon fontSize="large" /></a>
-                </div>
-                <div>
-                    <a href="https://github.com/LeonardoVincente" target="_blank">
-                        <GitHubIcon fontSize="large"  />
-                    </a>
+                <div className={classes.contactButtons}>
+                    <div>
+                        <a href="https://www.linkedin.com/in/ingleonardohernandez/" target="_blank">
+                            <LinkedInIcon color="inherit" fontSize="large" /></a>
+                    </div>
+                    <div>
+                        <a href="mailto: ic.lehevi@gmail.com"><EmailIcon fontSize="large" /></a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/LeonardoVincente" target="_blank">
+                            <GitHubIcon fontSize="large" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

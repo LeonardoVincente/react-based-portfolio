@@ -1,53 +1,69 @@
-.contact{
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    background-color: #247BA0;
-    position: relative;
-    display: flex;
-    justify-content: center; 
+.contact {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #247BA0;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
+.main {
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: #fafafa;
+  align-items: center;
+  justify-items: center;
+}
 
-.main{
-    display: flex;
-    position: relative;
-    height: 40px;
-    width: 100%;
-    background: #fafafa;
-    align-items: center;
-    justify-items: center;
-  }
-  
-  .main:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    width: 100%;
-    height: 300px;
-    background-color: #247BA0;
-    right: -25%;
-    top: 20px
-  }
-  
-  .main:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    width: 100%;
-    height: 300px;
-    background-color: #fafafa;
-    left: -25%;
-    top: -240px;
-  }
+.main:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: #247BA0;
+  right: -25%;
+  top: 20px
+}
 
-  .contactInfo{
-      width: 300px;
-      z-index: 100;
-      position: absolute;
-      bottom: 30px;
-      display: flex;
-      justify-content: space-evenly;
-  }
+.main:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: #fafafa;
+  left: -25%;
+  top: -240px;
+}
+
+.contactInfo {
+  width: 300px;
+  z-index: 100;
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTitle {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  height: 70px;
+}
+
+.contactButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+svg:hover {
+  color: #ab003c;
+}
