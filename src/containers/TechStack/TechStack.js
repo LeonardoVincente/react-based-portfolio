@@ -6,43 +6,46 @@ const categories = [
     {
         name: 'Front End',
         list: [
-            'React',
-            'Angular',
-            'Sass',
-            'Webpack',
-            'Jest',
-            'Jasmine',
-            'Electron',
+            {
+                displayName: 'React',
+                logo: '%PUBLIC_URL%/tech_stack/react.png'
+            }
+            // 'Angular',
+            // 'Sass',
+            // 'Webpack',
+            // 'Jest',
+            // 'Jasmine',
+            // 'Electron',
         ]
     },
-    {
-        name: 'Back End',
-        list: [
-            'Java',
-            'JAX-RS',
-            'Node',
-            'Express',
-            'MongoDB',
-        ]
-    },
-    {
-        name: 'Mobile',
-        list: [
-            'Android',
-            'Java',
-            'Kotlin'
-        ]
-    },
-    {
-        name: 'Infrastructure',
-        list: [
-            'AWS',
-            'Jenkins',
-            'Docker',
-            'Cloudformation',
-            'Datadog'
-        ]
-    }
+    // {
+    //     name: 'Back End',
+    //     list: [
+    //         'Java',
+    //         'JAX-RS',
+    //         'Node',
+    //         'Express',
+    //         'MongoDB',
+    //     ]
+    // },
+    // {
+    //     name: 'Mobile',
+    //     list: [
+    //         'Android',
+    //         'Java',
+    //         'Kotlin'
+    //     ]
+    // },
+    // {
+    //     name: 'Infrastructure',
+    //     list: [
+    //         'AWS',
+    //         'Jenkins',
+    //         'Docker',
+    //         'Cloudformation',
+    //         'Datadog'
+    //     ]
+    // }
 ];
 
 const TechStack = (props) => {
@@ -51,10 +54,10 @@ const TechStack = (props) => {
             return (
                 <div className={classes.techContainer}>
                     <div className={classes.logo}>
-
+                        <img src={tech.logo} />
                     </div>
                     <div className={classes.techName}>
-                        {tech}
+                        {tech.displayName}
                     </div>
                 </div>
             );
