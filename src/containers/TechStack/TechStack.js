@@ -2,13 +2,14 @@ import React from 'react';
 
 import classes from './TechStack.module.css';
 
+
 const categories = [
     {
         name: 'Front End',
         list: [
             {
                 displayName: 'React',
-                logo: '%PUBLIC_URL%/tech_stack/react.png'
+                logo: ''
             }
             // 'Angular',
             // 'Sass',
