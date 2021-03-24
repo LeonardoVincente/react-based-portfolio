@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classes from './TechStack.module.css';
+import reactLogo from './react.svg';
 
 
 const categories = [
@@ -55,7 +56,7 @@ const TechStack = (props) => {
             return (
                 <div className={classes.techContainer}>
                     <div className={classes.logo}>
-                        <img src={tech.logo} />
+                        <img src={reactLogo} />
                     </div>
                     <div className={classes.techName}>
                         {tech.displayName}
