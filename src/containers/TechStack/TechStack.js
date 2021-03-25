@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './TechStack.module.css';
-import reactLogo from './react.svg';
+import reactLogo from './tech_stack/react.svg';
 
 
 const categories = [
