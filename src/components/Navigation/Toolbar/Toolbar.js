@@ -5,9 +5,6 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 
 const toolbar = (props) => {
-    // const drawerToggleClicked = event =>{
-    //     console.log("Event clicked");
-    // }
     return (
         <header className={classes.Toolbar}>
             <DrawerToggle clicked={props.drawerToggleClicked}/>

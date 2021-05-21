@@ -8,14 +8,14 @@ import { experienceAtom } from '../Experience/Experience';
 import classes from './Main.module.css';
 
 
-const Main = (props) => {
+const Main = () => {
     const [currentExperience, setCurrentExperience] = useRecoilState(experienceAtom);
     let experienceDetail = null;
     if (currentExperience != null) {
         experienceDetail = <DetailExperience experienceInfo={currentExperience} onClose={()=>setCurrentExperience(null)}/>
     }
 
-    return <div className={classes.main}>
+    return <div id="home" className={classes.main}>
         {experienceDetail}
         <div className={classes.introduction}>
             <div className={classes.mainImageBG}>

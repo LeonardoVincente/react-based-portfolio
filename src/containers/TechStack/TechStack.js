@@ -105,7 +105,7 @@ const categories = [
     }
 ];
 
-const TechStack = (props) => {
+const TechStack = () => {
     const contentItems = categories.map(item => {
         const individualTech = item.list.map(tech => {
             return (

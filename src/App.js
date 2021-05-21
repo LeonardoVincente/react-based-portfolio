@@ -12,7 +12,7 @@ import Layout from './hoc/Layout/Layout';
 function App() {
   return (
     <RecoilRoot>
-      <div id="home" className="App">
+      <div className="App">
         <Layout>
           <Main></Main>
           <Experience></Experience>
