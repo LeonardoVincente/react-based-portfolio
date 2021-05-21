@@ -10,7 +10,6 @@ function manageCardClick(event) {
 }
 
 function onKeydownManager(event, onClose) {
-    console.log('escape keu')
     if (event.key === "Escape") {
         onClose();
     }

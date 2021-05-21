@@ -78,7 +78,8 @@ const getLinkObjById = (id, links) => {
 
 const closeDetailViewIfNotExperianceTab = (currentSectionSelected, setCurrentExperience) => {
     if (links[1] != currentSectionSelected) {
-        setCurrentExperience(null);
+        console.log('SETTING NULL navigation')
+        // setCurrentExperience(null);
     }
 }
 

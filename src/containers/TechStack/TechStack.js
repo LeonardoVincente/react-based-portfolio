@@ -109,7 +109,7 @@ const TechStack = (props) => {
     const contentItems = categories.map(item => {
         const individualTech = item.list.map(tech => {
             return (
-                <div className={classes.techContainer}>
+                <div key={tech.displayName} className={classes.techContainer}>
                     <div className={classes.logo}>
                         <img height="40px" src={tech.logo} />
                     </div>
