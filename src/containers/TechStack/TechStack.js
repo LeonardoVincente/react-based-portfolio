@@ -120,7 +120,7 @@ const TechStack = (props) => {
             );
         })
         return (
-            <div className={classes.category}>
+            <div key={item.name} className={classes.category}>
                 <div className={classes.title}>{item.name}</div>
                 <div className={classes.description}>{individualTech}</div>
             </div>

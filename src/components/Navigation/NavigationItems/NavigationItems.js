@@ -31,12 +31,16 @@ const NavigationItems = (props) => {
 
     var [currentSectionSelected, setCurrentSectionSelected] = useState(links[0]);
     const [currentExperience, setCurrentExperience] = useRecoilState(experienceAtom);
-    closeDetailViewIfNotExperianceTab(currentSectionSelected, setCurrentExperience);
+
+    const handleClick = ()=>{
+        setCurrentExperience(null);
+    }
 
     const initializeScroll = (currentSectionSelected, setCurrentSectionSelected, links) => {
         var returnedFunction = debounce(() => {
             let scroll_position = window.scrollY;
             window.requestAnimationFrame(() => {
+                setCurrentExperience(null);
                 updateToolbar(scroll_position, setCurrentSectionSelected, currentSectionSelected, links);
             });
         }, 200);
@@ -52,6 +56,7 @@ const NavigationItems = (props) => {
             key={linkObj.link}
             link={linkObj.link}
             isSelected={currentSectionSelected.link === linkObj.link}
+            onClick={handleClick}
         >{linkObj.text}</NavigationItem>
     })
 
@@ -74,13 +79,6 @@ const getLinkObjById = (id, links) => {
         }
     }
     return;
-}
-
-const closeDetailViewIfNotExperianceTab = (currentSectionSelected, setCurrentExperience) => {
-    if (links[1] != currentSectionSelected) {
-        console.log('SETTING NULL navigation')
-        // setCurrentExperience(null);
-    }
 }
 
 const updateToolbar = (position, setCurrentSectionSelected, cur, listElements) => {
