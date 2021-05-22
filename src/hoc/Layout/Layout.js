@@ -24,7 +24,7 @@ const Layout = props => {
                 open={sideDrawerIsVisible}
                 closed={sideDraweClosedHandler}
             />
-            <main className={classes.Content}>
+            <main id="mainContainer" className={classes.Content}>
                 {props.children}
             </main>
         </React.Fragment>

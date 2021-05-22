@@ -27,28 +27,32 @@ const links = [
 ];
 
 
-const NavigationItems = (props) => {
+const NavigationItems = () => {
 
     var [currentSectionSelected, setCurrentSectionSelected] = useState(links[0]);
-    const [currentExperience, setCurrentExperience] = useRecoilState(experienceAtom);
+    const [_0, setCurrentExperience] = useRecoilState(experienceAtom);
 
-    const handleClick = ()=>{
+    const handleClick = () => {
         setCurrentExperience(null);
     }
 
-    const initializeScroll = (currentSectionSelected, setCurrentSectionSelected, links) => {
+    const initializeScroll = (setCurrentSectionSelected, links) => {
         var returnedFunction = debounce(() => {
-            let scroll_position = window.scrollY;
+            const mainContainer = document.getElementById('mainContainer');
+            let scroll_position = mainContainer.scrollTop;
             window.requestAnimationFrame(() => {
                 setCurrentExperience(null);
-                updateToolbar(scroll_position, setCurrentSectionSelected, currentSectionSelected, links);
+                updateToolbar(scroll_position, setCurrentSectionSelected, links);
             });
-        }, 200);
-        window.addEventListener('scroll', returnedFunction);
+        }, 50);
+        const mainContainer = document.getElementById('mainContainer');
+        if (mainContainer) {
+            mainContainer.addEventListener('scroll', returnedFunction);
+        }
     }
 
     useEffect(() => {
-        initializeScroll(currentSectionSelected, setCurrentSectionSelected, links);
+        initializeScroll(setCurrentSectionSelected, links);
     }, []);
 
     const navigationItems = links.map((linkObj) => {
@@ -81,13 +85,14 @@ const getLinkObjById = (id, links) => {
     return;
 }
 
-const updateToolbar = (position, setCurrentSectionSelected, cur, listElements) => {
+const updateToolbar = (position, setCurrentSectionSelected, listElements) => {
     for (let i = 0; i < listElements.length; i++) {
         const element = document.querySelector(listElements[i].link);
         var rect = element.getBoundingClientRect();
-        if (position >= rect.top && position <= rect.bottom) {
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
             let selectedObj = getLinkObjById(listElements[i].link, listElements);
             setCurrentSectionSelected(selectedObj);
+            break;
         }
     }
 }
@@ -99,7 +104,6 @@ const debounce = (func, wait) => {
             clearTimeout(timeout);
             func(...args);
         };
-
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
     };
