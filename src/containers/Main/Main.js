@@ -12,7 +12,7 @@ const Main = () => {
     const [currentExperience, setCurrentExperience] = useRecoilState(experienceAtom);
     let experienceDetail = null;
     if (currentExperience != null) {
-        experienceDetail = <DetailExperience experienceInfo={currentExperience} onClose={()=>setCurrentExperience(null)}/>
+        experienceDetail = <DetailExperience experienceInfo={currentExperience} onClose={() => setCurrentExperience(null)} />
     }
 
     return <div id="home" className={classes.main}>
@@ -21,8 +21,8 @@ const Main = () => {
             <div className={classes.mainImageBG}>
                 <div className={classes.bgText}>
                     <div className={classes.textPresentation}>
-                        <p>I'm Leonardo Vincente</p>
-                        <p>And I'm a Software Engineer</p>
+                        <p className={classes.nameText}>Leonardo Vincente</p>
+                        <p className={classes.animTypewriter}>Software Engineer</p>
                     </div>
                 </div>
             </div>
