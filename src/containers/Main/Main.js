@@ -27,7 +27,7 @@ const Main = () => {
                 </div>
             </div>
             <div className={classes.introText}>
-                <p>Worked for the past 6+ years building web and Android applications</p>
+                <p>Buildig websites and mobile applications for the past 6+ years</p>
             </div>
         </div>
     </div>
