@@ -30,7 +30,7 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
         <React.Fragment>
             <div  className={classes.experienceDetail} onClick={onClose} onKeyDown={(e) => onKeydownManager(e, onClose)}>
                 <div className={classes.detailCard} onClick={manageCardClick}>
-                    <button ref={closeButtonRef} className={classes.closeButton} onClick={onClose}>X</button>
+                    <button aria-label='Close' ref={closeButtonRef} className={classes.closeButton} onClick={onClose}>X</button>
                     <div className={classes.header}>
                         <div className={classes.companyName}>
                             {experienceInfo.company}

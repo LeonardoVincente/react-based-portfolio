@@ -26,13 +26,18 @@ export default function Carrusel({ children }) {
 
     return (
         <div className={classes.container} >
-            <button className={rightArrowClasses} onClick={() => rightArrowClicked(currentIndex, children.length, setCurrentIndex)}>
-                <ArrowForwardIosIcon></ArrowForwardIosIcon>
-            </button>
-            <button className={leftArrowClasses}
+            <button 
+                className={leftArrowClasses}
+                aria-label='back arrow'
                 onClick={() => leftArrowClicked(currentIndex, children.length, setCurrentIndex)}
             >
                 <ArrowBackIosIcon></ArrowBackIosIcon>
+            </button>
+            <button 
+                className={rightArrowClasses} 
+                aria-label='forward arrow'
+                onClick={() => rightArrowClicked(currentIndex, children.length, setCurrentIndex)}>
+                <ArrowForwardIosIcon></ArrowForwardIosIcon>
             </button>
             <div className={progressClasses}>
                 <CarruselIndexIndicator length={children.length} index={currentIndex}/>
