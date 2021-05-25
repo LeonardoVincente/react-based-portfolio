@@ -13,10 +13,12 @@ const experienceJobs = [
         jobTitle: 'Software Engineer',
         startDate: 'August 2020',
         endDate: 'Present',
-        jobDescription: 'Currently in bootcamp.',
+        jobDescription: 'Worked in WhatsApp web application, improving and building for over 200 Million active users',
         logoBGColor: 'gray',
         detailed:{
-            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+            longDescription: `Working with React JS to bring the best experience to millions of active users.
+                              Worked on adding accessability improvements to help users to use the application.
+                              Also worked with bringing new features with quality and best practices in mind.`,
             projects: [
                 {
                     title: 'Some title',
@@ -42,10 +44,10 @@ const experienceJobs = [
         jobTitle: 'Software Engineer',
         startDate: 'January 2019',
         endDate: 'July 2020',
-        jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java.',
+        jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java. Worked using TDD and agile methodology.',
         logoBGColor: 'red',
         detailed:{
-            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+            longDescription: '',
             projects: [
                 {
                     title: 'Some title',
@@ -71,10 +73,10 @@ const experienceJobs = [
         jobTitle: 'Software Engineer',
         startDate: 'February 2015',
         endDate: 'December 2017',
-        jobDescription: 'Worked as a Web Developer using AngularJS or Vanilla Javascript. Developed for Android applications using Java.',
+        jobDescription: 'Worked as a Web Developer using AngularJS or Vanilla Javascript building applications for Smart TV\'s. Developed for Android applications using Java.',
         logoBGColor: 'gray',
         detailed:{
-            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+            longDescription: '',
             projects: [
                 {
                     title: 'Some title',
@@ -100,10 +102,10 @@ const experienceJobs = [
         jobTitle: 'Front End Developer',
         startDate: 'May 2014',
         endDate: 'February 2015',
-        jobDescription: 'Worked as a Front End Developer using Polymer library for web components. Also worked on some backend services using C#.',
+        jobDescription: 'Worked as a Front End Developer introducing modern web framework Polymer library for web components. Also worked on some backend services using C#.',
         logoBGColor: 'gray',
         detailed:{
-            longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+            longDescription: '',
             projects: [
                 {
                     title: 'Some title',

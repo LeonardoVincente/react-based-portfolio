@@ -67,6 +67,6 @@
   align-items: center;
 }
 
-svg:hover {
+.contactButtons svg:hover {
   color: #ab003c;
 }
