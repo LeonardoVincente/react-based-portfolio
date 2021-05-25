@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useRecoilState } from 'recoil';
 
 import classes from './NavigationItems.module.css'
 import NavigationItem from './NavigationItem/NavigationItem';
 import { experienceAtom } from '../../../containers/Experience/Experience';
-import {
-    useRecoilState,
-} from 'recoil';
 
 const links = [
     {
@@ -32,8 +30,13 @@ const NavigationItems = () => {
     var [currentSectionSelected, setCurrentSectionSelected] = useState(links[0]);
     const [_0, setCurrentExperience] = useRecoilState(experienceAtom);
 
-    const handleClick = () => {
+    const handleClick = (link) => {
         setCurrentExperience(null);
+        links.forEach(currentLink => {
+            if (currentLink.link === link) {
+                setCurrentSectionSelected(currentLink);
+            }
+        })
     }
 
     const initializeScroll = (setCurrentSectionSelected, links) => {
