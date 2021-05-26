@@ -14,7 +14,6 @@ const Layout = props => {
     }
 
     const sideDrawerToggleHandler = () => {
-        console.log("Side drawer clicked")
         setSideDrawerIsVisible(!sideDrawerIsVisible);
     }
     return (

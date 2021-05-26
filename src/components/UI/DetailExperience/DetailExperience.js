@@ -16,8 +16,8 @@ function onKeydownManager(event, onClose) {
 }
 
 const DetailExperience = ({ experienceInfo, onClose }) => {
-    const techStack = experienceInfo.detailed.techStack.map((tech) => {
-        return <li>{tech}</li>
+    const carruselItems = experienceInfo.detailed.projects[0].images.map((image,index) => {
+        return <CarruselItem key={index} image={image}></CarruselItem>
     });
 
     const closeButtonRef = useRef(null);
@@ -28,7 +28,7 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
 
     return (
         <React.Fragment>
-            <div  className={classes.experienceDetail} onClick={onClose} onKeyDown={(e) => onKeydownManager(e, onClose)}>
+            <div className={classes.experienceDetail} onClick={onClose} onKeyDown={(e) => onKeydownManager(e, onClose)}>
                 <div className={classes.detailCard} onClick={manageCardClick}>
                     <button aria-label='Close' ref={closeButtonRef} className={classes.closeButton} onClick={onClose}>X</button>
                     <div className={classes.header}>
@@ -46,10 +46,7 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                         <div className={classes.projects}>
                             <div className={classes.carruselContainer}>
                                 <Carrusel >
-                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[0]}></CarruselItem>
-                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[1]}></CarruselItem>
-                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[2]}></CarruselItem>
-                                    <CarruselItem image={experienceInfo.detailed.projects[0].images[2]}></CarruselItem>
+                                    {carruselItems}
                                 </Carrusel>
                             </div>
                         </div>

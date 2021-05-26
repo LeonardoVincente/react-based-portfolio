@@ -28,7 +28,7 @@ const Main = () => {
             </div>
             <div className={classes.introText}>
                 <p className={classes.text}>
-                    Buildig websites and mobile applications for the past 6+ years. Love building web applications 
+                    Buildig websites and mobile applications for the past 6+ years. 
                     I have experience building applications from Front-End, Back End, Infrastructure and development environment
                 </p>
             </div>

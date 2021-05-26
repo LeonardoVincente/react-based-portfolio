@@ -23,7 +23,6 @@ export default function Carrusel({ children }) {
 
     const progressClasses = [classes.progressContainer, classes.progressLarge].join(' ');
 
-
     return (
         <div className={classes.container} >
             <button 
@@ -43,6 +42,7 @@ export default function Carrusel({ children }) {
                 <CarruselIndexIndicator length={children.length} index={currentIndex}/>
             </div>
             {carruselItemToDisplay}
+            {/* <img height="40px" src={tech.logo} /> */}
         </div>
     );
 }
