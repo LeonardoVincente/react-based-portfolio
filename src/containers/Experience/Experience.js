@@ -7,8 +7,19 @@ import {
 import classes from './Experience.module.css';
 import ExperienceCard from '../../components/UI/ExperienceCard/ExperienceCard';
 import whatsapp1 from './project-images/whatsapp-web.jpeg';
-import whatsapp2 from './project-images/whatsapp-web2.jpeg';
-import whatsapp3 from './project-images/whatsapp-web3.jpeg';
+import whatsapp2 from './project-images/whatsapp-web4.png';
+import whatsapp3 from './project-images/whatsapp-web6.jpeg';
+
+import thermo1 from './project-images/thermo7.png';
+import thermo3 from './project-images/thermo3.jpeg';
+import thermo4 from './project-images/thermo8.png';
+import thermo5 from './project-images/thermo5.webp';
+
+import samsung1 from './project-images/samsung1.jpeg';
+import samsung2 from './project-images/samsung2.jpeg';
+import samsung3 from './project-images/samsung3.webp';
+import samsung4 from './project-images/samsung4.webp';
+import samsung5 from './project-images/samsung5.png';
 
 const experienceJobs = [
     {
@@ -58,7 +69,7 @@ const experienceJobs = [
                     techStack: [
                         'javascript'
                     ],
-                    images: ['some image whatsap 1', 'some image whatsap 2', 'some image whatsap 3']
+                    images: [thermo1, thermo3, thermo4, thermo5]
                 }
             ],
             techStack: [
@@ -87,7 +98,7 @@ const experienceJobs = [
                     techStack: [
                         'javascript'
                     ],
-                    images: ['some image whatsap 1', 'some image whatsap 2', 'some image whatsap 3']
+                    images: [samsung3, samsung1, samsung4, samsung5]
                 }
             ],
             techStack: [

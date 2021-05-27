@@ -1,5 +1,12 @@
-.container{
+.container {
     background-color: lightgray;
     height: 100%;
     width: 100%;
+    /* overflow: hidden; */
+}
+
+.imageCont {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
 }
