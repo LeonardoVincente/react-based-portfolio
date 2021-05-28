@@ -7,8 +7,9 @@ import {
 import classes from './Experience.module.css';
 import ExperienceCard from '../../components/UI/ExperienceCard/ExperienceCard';
 import whatsapp1 from './project-images/whatsapp-web.jpeg';
-import whatsapp2 from './project-images/whatsapp-web4.png';
+import whatsapp2 from './project-images/whatsapp-web7.jpeg';
 import whatsapp3 from './project-images/whatsapp-web6.jpeg';
+import whatsapp8 from './project-images/whatsapp-web8.jpeg';
 
 import thermo1 from './project-images/thermo7.png';
 import thermo3 from './project-images/thermo3.jpeg';
@@ -16,7 +17,6 @@ import thermo4 from './project-images/thermo8.png';
 import thermo5 from './project-images/thermo5.webp';
 
 import samsung1 from './project-images/samsung1.jpeg';
-import samsung2 from './project-images/samsung2.jpeg';
 import samsung3 from './project-images/samsung3.webp';
 import samsung4 from './project-images/samsung4.webp';
 import samsung5 from './project-images/samsung5.png';
@@ -40,7 +40,7 @@ const experienceJobs = [
                     techStack: [
                         'javascript'
                     ],
-                    images: [whatsapp1, whatsapp2, whatsapp3]
+                    images: [whatsapp2, whatsapp8, whatsapp3]
                 }
             ],
             techStack: [
