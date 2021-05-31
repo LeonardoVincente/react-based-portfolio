@@ -18,10 +18,21 @@
 .Toolbar .leo{
     width: 200px;
     font-size: 1.2em;
+    /* line-height: 100px; */
+
+}
+
+img{
+    vertical-align: middle;
 }
 
 .Toolbar nav{
     height: 100%;
+}
+
+.textSpan{
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 @media(max-width: 499px){
