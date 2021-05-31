@@ -16,9 +16,14 @@ function onKeydownManager(event, onClose) {
 }
 
 const DetailExperience = ({ experienceInfo, onClose }) => {
-    const carruselItems = experienceInfo.detailed.projects[0].images.map((image,index) => {
+    const carruselItems = experienceInfo.detailed.projects[0].images.map((image, index) => {
         return <CarruselItem key={index} image={image}></CarruselItem>
     });
+
+    const techStackItems = experienceInfo.detailed.techStack.map( (tech, index) => {
+        const comma = index < experienceInfo.detailed.techStack.length -1 ? ',' : '';
+        return <span>{tech} {comma} </span>
+    })
 
     const closeButtonRef = useRef(null);
 
@@ -42,6 +47,9 @@ const DetailExperience = ({ experienceInfo, onClose }) => {
                     <div className={classes.contentContainer}>
                         <div className={classes.description}>
                             {experienceInfo.detailed.longDescription}
+                        </div>
+                        <div className={classes.techStackText}>
+                            <span>Tech Stack: {techStackItems}</span>
                         </div>
                         <div className={classes.projects}>
                             <div className={classes.carruselContainer}>

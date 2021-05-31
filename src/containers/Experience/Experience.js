@@ -50,7 +50,6 @@ const experienceJobs = [
                 'React',
                 'Jest',
                 'React Testing Library',
-                'Electron',
                 'Sass'
             ]
         }
@@ -63,7 +62,7 @@ const experienceJobs = [
         jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java. Worked using TDD and agile methodology.',
         logoBGColor: 'red',
         detailed: {
-            longDescription: '',
+            longDescription: 'Worked on connecting devices to cloud platform by creating API\'s using Microservices architecture and in AWS platform. Front End developed with Angular and created UI components to be used across projects.',
             projects: [
                 {
                     title: 'Some title',
@@ -76,11 +75,13 @@ const experienceJobs = [
             ],
             techStack: [
                 'Javascript',
-                'React',
-                'Jest',
-                'React Testing Library',
-                'Electron',
-                'Sass'
+                'Angular',
+                'Jasmine',
+                'AWS',
+                'Java',
+                'Datadog',
+                'Jenkins',
+                'Docker'
             ]
         }
     },
@@ -92,7 +93,7 @@ const experienceJobs = [
         jobDescription: 'Worked as a Web Developer using AngularJS or Vanilla Javascript building applications for Smart TV\'s. Developed for Android applications using Java.',
         logoBGColor: 'gray',
         detailed: {
-            longDescription: '',
+            longDescription: 'Developed Android Application to control Samsung\s Smart TV, the application is used to display images on the TV and playing content simillar to chromecast. Also worked on developing applications and tools for Samsung Smart TV\s',
             projects: [
                 {
                     title: 'Some title',
@@ -105,10 +106,9 @@ const experienceJobs = [
             ],
             techStack: [
                 'Javascript',
-                'React',
-                'Jest',
-                'React Testing Library',
-                'Electron',
+                'Angular',
+                'Android',
+                'Java',
                 'Sass'
             ]
         }
@@ -121,7 +121,8 @@ const experienceJobs = [
         jobDescription: 'Worked as a Front End Developer introducing modern web framework Polymer library for web components. Also worked on some backend services using C#.',
         logoBGColor: 'gray',
         detailed: {
-            longDescription: '',
+            longDescription: `Worked as Front End developer for automovil tracking company. Introduced new framework and did a UI refresh in a component
+                              based architecture and introduced new modules to the application.`,
             projects: [
                 {
                     title: 'Some title',
@@ -134,11 +135,9 @@ const experienceJobs = [
             ],
             techStack: [
                 'Javascript',
-                'React',
-                'Jest',
-                'React Testing Library',
-                'Electron',
-                'Sass'
+                'Polymer',
+                '.NET',
+                'C#'
             ]
         }
     }
