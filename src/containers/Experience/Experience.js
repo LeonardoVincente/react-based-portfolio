@@ -27,7 +27,7 @@ const experienceJobs = [
     {
         company: 'Facebook Inc.',
         jobTitle: 'Software Engineer',
-        startDate: 'August 2020',
+        startDate: 'Aug 2020',
         endDate: 'Present',
         jobDescription: 'Worked in WhatsApp web application, improving and building for over 200 Million active users',
         logoBGColor: 'gray',
@@ -57,7 +57,7 @@ const experienceJobs = [
     {
         company: 'Thermofisher Scientific',
         jobTitle: 'Software Engineer',
-        startDate: 'January 2019',
+        startDate: 'Jan 2019',
         endDate: 'July 2020',
         jobDescription: 'Working with Angular/Typescript for the Front End and Restful backend microservices with Java. Worked using TDD and agile methodology.',
         logoBGColor: 'red',
@@ -88,8 +88,8 @@ const experienceJobs = [
     {
         company: 'Sumsung Electronics',
         jobTitle: 'Software Engineer',
-        startDate: 'February 2015',
-        endDate: 'December 2017',
+        startDate: 'Feb 2015',
+        endDate: 'Dec 2017',
         jobDescription: 'Worked as a Web Developer using AngularJS or Vanilla Javascript building applications for Smart TV\'s. Developed for Android applications using Java.',
         logoBGColor: 'gray',
         detailed: {
@@ -117,7 +117,7 @@ const experienceJobs = [
         company: 'Argus Telematics',
         jobTitle: 'Front End Developer',
         startDate: 'May 2014',
-        endDate: 'February 2015',
+        endDate: 'Feb 2015',
         jobDescription: 'Worked as a Front End Developer introducing modern web framework Polymer library for web components. Also worked on some backend services using C#.',
         logoBGColor: 'gray',
         detailed: {
