@@ -32,9 +32,9 @@ const experienceJobs = [
         jobDescription: 'Worked in WhatsApp web application, improving and building for over 200 Million active users',
         logoBGColor: 'gray',
         detailed: {
-            longDescription: `Working with React JS to bring the best experience to millions of active users.
-                              Worked on adding accessability improvements to help users to use the application.
-                              Also worked with bringing new features with quality and best practices in mind.`,
+            longDescription: `Working on WhatsApp Web Platform using ReactJS as Front-End framework,
+                              building new features and improving accessibility for the web platform.
+                              Building for over 200 million active users and creating value for the users.`,
             projects: [
                 {
                     title: 'Some title',
