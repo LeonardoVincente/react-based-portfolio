@@ -22,7 +22,6 @@ const ExperienceCard = (props) => {
     const companyLogoClasses = [classes.companyLogo];
     const companyLogo = getCompanyLogo(props.experienceData.company);
     companyLogoClasses.push(companyLogo);
-    console.log('asd ',  window.innerHeight)
     const infoButton = window.innerHeight > 700 ? <div className={classes.moreInfo}>
         <div className={classes.moreInfoButton} onClick={() => props.onMoreButtonClick(props.experienceData)}>
             <Logo />
