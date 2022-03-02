@@ -8,8 +8,14 @@ import Contact from './containers/Contact/Contact';
 import TechStack from './containers/TechStack/TechStack';
 import Layout from './hoc/Layout/Layout';
 import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-ND9HDQ5'
+}
 
 function App() {
+  TagManager.initialize(tagManagerArgs);
   ReactGA.initialize('G-LHYCET7WXT');
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
