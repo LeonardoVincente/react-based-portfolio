@@ -16,7 +16,7 @@ const tagManagerArgs = {
 
 function App() {
   TagManager.initialize(tagManagerArgs);
-  ReactGA.initialize('G-LHYCET7WXT');
+  ReactGA.initialize('UA-221501672-2');
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <RecoilRoot>
