@@ -91,6 +91,18 @@
     animation: typewriter 3s steps(24) 1s 1 normal both, blinkTextCursor 500ms steps(24) infinite normal;
 }
 
+.animationRow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animationCont{
+    width: 250px;
+    height: 250px;
+}
+
 @keyframes typewriter {
     from {
         width: 0;

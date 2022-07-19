@@ -4,6 +4,8 @@ import {
 } from 'recoil';
 import DetailExperience from '../../components/UI/DetailExperience/DetailExperience';
 import { experienceAtom } from '../Experience/Experience';
+import Lottie from "lottie-react";
+import animationProgramming from "./../../assets/animations/programming-computer.json";
 
 import classes from './Main.module.css';
 
@@ -28,9 +30,14 @@ const Main = () => {
             </div>
             <div className={classes.introText}>
                 <p className={classes.text}>
-                    Buildig websites and mobile applications for the past 6+ years. 
+                    Buildig websites and mobile applications for the past 6+ years.
                     I have experience building applications from Front-End, Back End, Infrastructure and development environment
                 </p>
+            </div>
+            <div className={classes.animationRow}>
+                <div className={classes.animationCont}>
+                    <Lottie animationData={animationProgramming} loop={true} />
+                </div>
             </div>
         </div>
     </div>
