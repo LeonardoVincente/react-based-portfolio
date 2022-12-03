@@ -23,15 +23,15 @@ const Main = () => {
             <div className={classes.mainImageBG}>
                 <div className={classes.bgText}>
                     <div className={classes.textPresentation}>
-                        <p className={classes.nameText}>Leonardo Vincente</p>
+                        <p className={classes.nameText}>Leonardo H. Vincente</p>
                         <p className={classes.animTypewriter}>Software Engineer</p>
                     </div>
                 </div>
             </div>
             <div className={classes.introText}>
                 <p className={classes.text}>
-                    Buildig websites and mobile applications for the past 6+ years.
-                    I have experience building applications from Front-End, Back End, Infrastructure and development environment
+                    Buildig websites and mobile applications for the past 7+ years.
+                    I have experience building applications from Front-End, Back End, Infrastructure and development environment. Always looking to better deliver to the end user. 
                 </p>
             </div>
             <div className={classes.animationRow}>
