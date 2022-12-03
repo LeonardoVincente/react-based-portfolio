@@ -6,8 +6,8 @@ import { ReactComponent as Logo } from '../../../assets/images/loupe-black-18dp.
 
 const getCompanyLogo = (company) => {
     switch (company) {
-        case 'Facebook Inc.':
-            return classes.facebookLogo;
+        case 'Meta Platforms Inc.':
+            return classes.metaLogo;
         case 'Thermofisher Scientific':
             return classes.thermoFisherLogo;
         case 'Sumsung Electronics':

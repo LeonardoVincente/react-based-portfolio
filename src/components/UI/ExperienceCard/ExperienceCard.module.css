@@ -38,6 +38,14 @@
   background-color: #3b5998;
 }
 
+.metaLogo {
+  background-image: url('../../../assets/images/meta.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: white;
+}
+
 .thermoFisherLogo {
   background-color: #ed2c34;
   background-image: url('../../../assets/images/thermofisher-logo.png');

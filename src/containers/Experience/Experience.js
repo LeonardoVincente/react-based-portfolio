@@ -25,16 +25,14 @@ import zeek3 from './project-images/zeek4.jpeg';
 
 const experienceJobs = [
     {
-        company: 'Facebook Inc.',
+        company: 'Meta Platforms Inc.',
         jobTitle: 'Software Engineer',
         startDate: 'Aug 2020',
         endDate: 'Present',
-        jobDescription: 'Worked in WhatsApp web application, improving and building for over 200 Million active users',
+        jobDescription: 'Working on Web platform to bring new features to WhatsApp Web and Desktop. Added from conception to production features like Reactions. Improving and building for over 200 Million active users',
         logoBGColor: 'gray',
         detailed: {
-            longDescription: `Working on WhatsApp Web Platform using ReactJS as Front-End framework,
-                              building new features and improving accessibility for the web platform.
-                              Building for over 200 million active users and creating value for the users.`,
+            longDescription: `Working on Web platform to bring new features to WhatsApp Web and Desktop. Added from conception to production features like Reactions, Group Catch Up, Elevated push names and accessibility improvements. Used the latest technologies and techniques to bring new features to millions of people.`,
             projects: [
                 {
                     title: 'Some title',
